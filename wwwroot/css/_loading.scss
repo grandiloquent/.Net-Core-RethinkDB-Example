@@ -1,0 +1,84 @@
+.nomore {
+    display: none;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.3);
+    padding: 10px 0 0;
+}
+
+@keyframes loading {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes loading {
+    from {
+        -webkit-transform: rotate(0deg) translateZ(0)
+    }
+    to {
+        -webkit-transform: rotate(360deg) translateZ(0)
+    }
+}
+
+@-moz-keyframes spinner1 {
+    from {
+        -moz-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes spinner1 {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes spinner1 {
+    from {
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg)
+    }
+}
+
+.loading {
+    height: 30px;
+    text-align: center;
+    padding: 10px 0;
+    color: #888;
+    position: relative;
+}
+
+$loading-indicator-size:30px;
+.loading__indicator {
+    display: none;
+    position: relative;
+    width: $loading-indicator-size;
+    height: $loading-indicator-size;
+    border-radius: $loading-indicator-size;
+    margin: 0 auto;
+    border-left: 2px solid #22c485;
+    border-right: 2px solid #22c485;
+    -moz-animation: spinner1 .8s linear infinite;
+    -webkit-animation: spinner1 .8s linear infinite;
+    animation: spinner1 .8s linear infinite
+}

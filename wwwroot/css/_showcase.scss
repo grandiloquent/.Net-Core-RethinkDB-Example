@@ -1,0 +1,48 @@
+
+.show-list {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-top: 34.67%;
+    background-color: #fff
+}
+.show-list:last-child{
+    margin-bottom: 60px;
+}
+.show-list:after {
+    border-bottom: 1px solid #f1f1f1
+}
+
+.show-list-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 29.23%;
+    padding-top: 29.23%;
+    overflow: hidden;
+    margin: 10px
+}
+
+.show-list-pic>img {
+    position: absolute;
+    top: 0;
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+}
+
+.show-list-detail {
+    position: absolute;
+    padding: 10px 10px 10px 0;
+    top: 0;
+    right: 0;
+    width: 65.33%;
+    height: 100%;
+    overflow: hidden
+}
+
+.show-list-title {
+    height: 35px;
+    line-height: 17px;
+    font-size: 14px
+}

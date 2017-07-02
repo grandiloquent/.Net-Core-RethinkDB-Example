@@ -1,0 +1,23 @@
+﻿@using EverStore.Models
+@{
+    ViewData["Title"] = "Home Page";
+    ViewData["MenuActive"] = 0;
+}
+
+@foreach (Article article in (List<Article>) ViewData["Articles"])
+{
+    <div class="medium-list__item">
+        <a href="/a/@article.Id">
+            <div class="medium-list__image">
+                <div class="medium-list__image-s" style="background-image: url(/resource/@article.Image);"></div>
+            </div>
+            <div class="medium-list__footer">
+                <div class="medium-list__footer-container mobile-flex-vc">
+                    <div class="medium-list__title line-clamp--2">
+                        <span>@article.Title</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+}

@@ -1,0 +1,23 @@
+.action__container {
+    position: fixed;
+    bottom: 150px;
+    right: 15px;
+    user-select: none;
+}
+
+.action__button {
+    width: 42.5px;
+    height: 42.5px;
+    background: #FF4081;
+    border: none;
+    outline: 0;
+    border-radius: 50%;
+    color: #eee;
+    text-align: center;
+    letter-spacing: 0.5px;
+    padding: 0;
+    line-height: 42px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.action__text {}

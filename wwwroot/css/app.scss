@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import "variables";
+@import "reset";
+@import "header";
+@import "layout";
+//@import "showcase";
+//@import "floataction";
+@import "toolbar";
+@import "btn";
+@import "utilities";
+@import "nav";
+@import "swipe";
+@import "article";
+@import "footer";
+@import "action";
+@import "loading";
+//@import "card";
+.list {}
+
+
+/**/
+
+.medium-list__item {
+    background: #fff;
+    border-bottom: 1px solid #dcdcdc;
+    overflow: auto;
+    padding: 12px; //  padding: $gutter-vertical 12px 12px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.medium-list__image {
+    position: relative;
+    width: 100px;
+    height: 67px;
+    float: left; // padding-bottom: 56.25%;
+    // width: 100%;
+}
+
+.medium-list__image-s {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.medium-list__footer {
+    position: relative; //margin-top: 12px;
+    //width: 100%;
+    margin-left: 112px;
+    width: auto;
+}
+
+.medium-list__footer-container {
+    font-size: 12px;
+    margin: 0 23px 0 0; //  margin: 0 23px 0;
+    padding-top: 2px;
+    min-height: 38px;
+}
+
+.medium-list__title {
+    font-size: 14px;
+    line-height: 1.25;
+    max-height: 34px;
+    color: #222;
+    word-break: break-all; // If the phrase is too long, force it to wrap;  
+}
+

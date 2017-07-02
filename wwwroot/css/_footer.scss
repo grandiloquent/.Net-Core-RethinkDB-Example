@@ -1,0 +1,9 @@
+.footer {
+    margin-top: 9px;
+    background: #fff;
+    text-align: center;
+    padding: 12px;
+    &>a {
+        color: #767676;
+    }
+}

@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "计算器";
+}
+
+@section Stylesheets{
+    <link rel="stylesheet" href="~/css/calculator.css"/>
+}
+<div class="calculator">
+    <div class="calculator-input" id="input"></div>
+    <div class="calculator-result" id="result"></div>
+
+    <div class="calculator-symbols">
+        @{
+            char[] symbols = new char[] {'(', ')', '/', '*', '-', '+', '.'};
+            for (int i = 0; i < symbols.Length; i++)
+            {
+                if (i == 2)
+                {
+                    <a class="btn btn-symbol btn-delete" id="btn-delete">删除</a>
+                }
+                <a class="btn btn-symbol" data-symbol="@symbols[i]">@symbols[i]</a>
+            }
+        }
+        @for (int i = 9; i > -1; --i)
+        {
+            <a class="btn btn-symbol" data-symbol="@i">@i</a>
+        }
+    </div>
+    <div style="background: #fff; padding-top: 30px"></div>
+</div>

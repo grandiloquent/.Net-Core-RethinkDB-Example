@@ -1,0 +1,33 @@
+@charset "utf8";
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background: #eee;
+    color: #767676;
+    font-family: $font-family;
+    font-weight: normal;
+    font-size: 14px;
+    -webkit-text-size-adjust: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    letter-spacing: -.02em;
+    line-height: 1.25
+}
+
+h5 {
+    font-size: 16px
+}
+
+a {
+    color: #4285f4;
+    text-decoration: none;
+}

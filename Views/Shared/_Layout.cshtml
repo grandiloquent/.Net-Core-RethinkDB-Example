@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <title>@ViewData["Title"] - EverStore</title>
+
+    <environment names="Development">
+        <link rel="stylesheet" href="~/css/material-icons.css"/>
+        <link rel="stylesheet" href="~/css/app.css"/>
+    </environment>
+    <environment names="Staging,Production">
+
+    </environment>
+    @RenderSection("Stylesheets", false)
+</head>
+<body>
+<a id="page-top" href="#"></a>
+<div class="header">
+    <div class="header-logo">
+        <a href="/">
+            <i class="material-icons">home</i>
+        </a>
+    </div>
+</div>
+<div class="nav">
+
+    @{
+
+        var menuActive = ViewData["MenuActive"] as int? ?? -1;
+        <a class="@(menuActive == 0 ? "nav__item active" : "nav__item")" href="/">主页</a>
+        <a class="@(menuActive == 1 ? "nav__item active" : "nav__item")" asp-controller="Tag" asp-route-tag="health">健康</a>
+        <a class="@(menuActive == 2 ? "nav__item active" : "nav__item")" asp-controller="Tag" asp-route-tag="foods">美食</a>
+        <a class="@(menuActive == 3 ? "nav__item active" : "nav__item")" asp-controller="Tag" asp-route-tag="encyclopedia">百科</a>
+        <a class="@(menuActive == 4 ? "nav__item active" : "nav__item")" asp-action="Calculator">工具</a>
+    }
+
+
+</div>
+
+@RenderBody()
+
+<footer class="footer">
+    <a asp-action="Contact">
+        <span>联系方式</span>
+    </a>
+</footer>
+
+@RenderSection("Scripts", required: false)
+</body>
+</html>

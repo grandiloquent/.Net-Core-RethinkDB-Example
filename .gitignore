@@ -1,0 +1,4 @@
+/.vscode/*
+/obj/*
+/bin/*
+EverStore.csproj.user

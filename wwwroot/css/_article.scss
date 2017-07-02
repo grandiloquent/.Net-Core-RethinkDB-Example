@@ -1,0 +1,166 @@
+.article-title {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-size: 24px
+}
+
+
+/**/
+
+
+/**/
+
+.article {
+    background-color: #fefefe;
+    font-size: 16px;
+    padding: 16px;
+    & a {
+        word-wrap: break-word;
+    }
+    & table {
+        background: none;
+        border: solid 0 #e9e9e9;
+        width: 100%;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    & table thead,
+    & table tfoot {
+        font-weight: bold;
+    }
+    & table td,
+    & table th {
+        color: #262626;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        line-height: 1.5;
+        text-align: center;
+    }
+}
+
+.article h1 {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-weight: 400;
+    font-size: 24px;
+    & img {
+        height: 20px;
+        padding-left: 8px;
+        width: auto;
+    }
+}
+
+.article h2,
+.article h3,
+.article h4 {
+    font-weight: 700;
+    margin: 0
+}
+
+.article p,
+.article pre,
+.article table {
+    margin: 0 0 32px
+}
+
+.article h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-bottom: 16px
+}
+
+.article h3 {
+    font-size: 24px;
+    line-height: 1.875
+}
+
+.article h4 {
+    font-size: 20px;
+    line-height: 2
+}
+
+.article h4+blockquote {
+    margin-top: 32px
+}
+
+.article ul,
+.article ol {
+    padding: 0;
+    list-style: none;
+    counter-reset: ol-counter;
+    margin: 0 0 20px 25px;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px
+}
+
+.article li {
+    position: relative;
+    font-weight: 300;
+    color: #3a3a3a
+}
+
+.article li:before {
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+    display: block;
+    right: 100%;
+    margin-right: 13px;
+    position: absolute;
+    color: #3ec9cb;
+    text-align: right
+}
+
+.article ul li:before {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #3ec9cb;
+    content: "";
+    top: 10px
+}
+
+.article ol li:before {
+    content: counter(ol-counter, decimal);
+    counter-increment: ol-counter;
+    margin-right: 13px;
+    font-weight: 700
+}
+
+.article blockquote {
+    position: relative;
+    padding: 12px 16px;
+    font-size: 16px;
+    border-left: 5px solid #e5e5e5;
+    color: #3a3a3a;
+    font-weight: 300;
+    margin: 0 0 1.25em
+}
+
+.article blockquote p {
+    margin: 0;
+    font-weight: 300;
+    color: #3a3a3a
+}
+
+.article blockquote ul,
+.article blockquote ol {
+    margin-bottom: 0;
+}
+
+.article .centered {
+    display: block;
+    width: auto!important;
+    max-width: 100%!important;
+    height: auto!important;
+    margin: 0 auto 30px!important;
+}
+
+.article p img,
+.article li img {
+    width: 1em;
+    height: auto;
+}

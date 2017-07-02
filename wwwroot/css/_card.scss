@@ -1,0 +1,104 @@
+.card-layout {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+    width: 100%;
+    background-color: #fff;
+    text-align: start;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+}
+
+.card-img-layout {
+    position: relative;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.23%;
+}
+
+.card-header {
+    margin: 16px;
+}
+
+.card-title {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.card-img {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.card-action-layout {
+    margin: 16px 8px;
+}
+
+.card-footer {
+    border-top: 1px solid #ebebeb;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    pointer-events: none;
+}
+
+.card-divider {
+    height: 16px;
+}
+
+.card-action {
+    margin: 0 8px;
+    transition: background .3s;
+    border: 0;
+    border-radius: 50%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.54);
+    fill: rgba(0, 0, 0, 0.54);
+    background: #eeeeee;
+    height: 36px;
+    width: 36px;
+}
+
+.card-action-wrap {
+    position: relative;
+    top: 50%;
+    &>span {
+        display: inline-block;
+        position: relative;
+        top: -12px;
+    }
+}
+
+.card-ico-layout {
+    height: 18px;
+    width: 18px;
+    margin: 2px;
+    & .material-icons {
+        font-size: 18px;
+    }
+}
+
+.card-footer-wrap {
+    position: absolute;
+    top: 12px;
+    bottom: 12px;
+    left: 16px;
+    right: 16px;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.87);
+    overflow: hidden;
+    word-break: break-word;
+}

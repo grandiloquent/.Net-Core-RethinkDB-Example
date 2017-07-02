@@ -1,0 +1,43 @@
+.swipe {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.swipe__container {
+    min-height: 320px;
+    max-width: 640px;
+    width: 100%;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}
+
+.swipe__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: visible;
+    margin: 0;
+    padding: 0;
+    z-index: 3;
+    list-style: none;
+}
+
+.swipe__item {
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;
+    min-height: 320px;
+    visibility: visible;
+    position: relative;
+    background-color: #fff;
+    float: left;
+    &>div {
+        height: 100%;
+        color: #333;
+        font-size: 36px;
+        text-align: center;
+    }
+}
